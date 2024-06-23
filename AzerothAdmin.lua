@@ -1926,7 +1926,7 @@ function AzerothAdmin:InitDropDowns()
 --      {"Romanian","roRO"},
 --      {"Russkiy","ruRU"},
 --      {"Svenska","svSV"},
---      {"Chinese","zhCN"},
+      {"Chinese","zhCN"},
 --      {"Bulgarian", "buBU"}
     }
     for k,v in pairs(buttons) do
