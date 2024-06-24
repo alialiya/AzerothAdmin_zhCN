@@ -18,18 +18,18 @@
 
 -- Initializing dynamic frames with LUA and FrameLib
 -- This script must be listed in the .toc after "MangFrames_SectionMain.lua"
--- Also some variables are globally taken from AzerothAdmin.lua
+-- Also some variables are globally taken from MangAdmin.lua
 
-function AzerothAdmin:CreateTeleSection()
+function MangAdmin:CreateTeleSection()
   local transparency = {
-    bg = AzerothAdmin.db.account.style.transparency.backgrounds,
-    btn = AzerothAdmin.db.account.style.transparency.buttons,
-    frm = AzerothAdmin.db.account.style.transparency.frames
+    bg = MangAdmin.db.account.style.transparency.backgrounds,
+    btn = MangAdmin.db.account.style.transparency.buttons,
+    frm = MangAdmin.db.account.style.transparency.frames
   }
   local color = {
-    bg = AzerothAdmin.db.account.style.color.backgrounds,
-    btn = AzerothAdmin.db.account.style.color.buttons,
-    frm = AzerothAdmin.db.account.style.color.frames
+    bg = MangAdmin.db.account.style.color.backgrounds,
+    btn = MangAdmin.db.account.style.color.buttons,
+    frm = MangAdmin.db.account.style.color.frames
   }
 
   FrameLib:BuildFontString({
@@ -79,7 +79,7 @@ function AzerothAdmin:CreateTeleSection()
       name = "ma_ContScrollBarEntry1_texture",
       color = {color.btn.r, color.btn.g, color.btn.b, transparency.btn}
     },
-    text = "Eastern Kingdoms (N)",
+    text = Locale["EasternKingdoms(N)"],
     size = {
       width = 181,
       height = 16
@@ -101,7 +101,7 @@ function AzerothAdmin:CreateTeleSection()
       name = "ma_ContScrollBarEntry2_texture",
       color = {color.btn.r, color.btn.g, color.btn.b, transparency.btn}
     },
-    text = "Eastern Kingdoms (S)",
+    text = Locale["EasternKingdoms(S)"],
     size = {
       width = 181,
       height = 16
